@@ -60,7 +60,7 @@ export const DELETE_FAIL = 'DELETE_FAIL';
 
 export const deleteEvent = id => dispatch => {
     dispatch({ type: DELETE_START });
-    axios // eslint-disable-next-line
+    axios 
         .delete('`***LINK***/${id}`')
         .then(res => {
             dispatch({ type: DELETE_SUCCESS, payload: res.data });

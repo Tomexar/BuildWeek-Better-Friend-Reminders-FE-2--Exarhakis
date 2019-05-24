@@ -38,7 +38,7 @@ class EditForm extends React.Component {
                     <EditHead>
                         <EditTitle>Edit</EditTitle>
                     </EditHead>
-                    <EditFormStyle onSubmit={this.addEvent}>
+                    <EditFormStyle onSubmit={this.editEvent}>
                         <EditInput
                             type='text'
                             name='event'
